@@ -20,13 +20,22 @@ namespace GuessingGame
                     Console.WriteLine($"You guessed it! It was {secretNumber}.");
                     return;
                 }
-                else if (userGuessInt < secretNumber)
+                else if (userGuessInt < secretNumber && i != 2 && userGuessInt > 0)
                 {
                     Console.WriteLine("Nope that wasn't it. Guess higher.");
                 }
-                else if (userGuessInt > secretNumber)
+                else if (userGuessInt > secretNumber && i != 2 && userGuessInt < 11)
                 {
                     Console.WriteLine("Nope that wasn't it. Guess lower.");
+                }
+                else if (userGuessInt != secretNumber && i == 2)
+                {
+                    Console.WriteLine("You lose! You get nothing! Good day sir!");
+                }
+                else if (userGuessInt < 1 || userGuessInt > 10)
+                {
+                    i -= 1;
+                    Console.WriteLine("Your guess must be between 1 and 10. Guess again.");
                 }
             }
 
