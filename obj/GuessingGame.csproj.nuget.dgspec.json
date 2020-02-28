@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\William\\workspace\\GuessingGame\\GuessingGame.csproj": {}
+    "C:\\Users\\William\\workspace\\guessinggame\\GuessingGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\William\\workspace\\GuessingGame\\GuessingGame.csproj": {
+    "C:\\Users\\William\\workspace\\guessinggame\\GuessingGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\William\\workspace\\GuessingGame\\GuessingGame.csproj",
+        "projectUniqueName": "C:\\Users\\William\\workspace\\guessinggame\\GuessingGame.csproj",
         "projectName": "GuessingGame",
-        "projectPath": "C:\\Users\\William\\workspace\\GuessingGame\\GuessingGame.csproj",
+        "projectPath": "C:\\Users\\William\\workspace\\guessinggame\\GuessingGame.csproj",
         "packagesPath": "C:\\Users\\William\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\William\\workspace\\GuessingGame\\obj\\",
+        "outputPath": "C:\\Users\\William\\workspace\\guessinggame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\William\\AppData\\Roaming\\NuGet\\NuGet.Config"

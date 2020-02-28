@@ -8,8 +8,9 @@ namespace GuessingGame
         {
             Random rand = new Random();
             int secretNumber = rand.Next(1, 11);
+            bool isCorrect = false;
 
-            for (int i = 0; i < 3; i++)
+            while (!isCorrect)
             {
                 Console.WriteLine("Guess a number between 1 and 10");
                 string userGuess = Console.ReadLine();
@@ -18,23 +19,22 @@ namespace GuessingGame
                 if (userGuessInt == secretNumber)
                 {
                     Console.WriteLine($"You guessed it! It was {secretNumber}.");
-                    return;
+                    isCorrect = true;
                 }
-                else if (userGuessInt < secretNumber && i != 2 && userGuessInt > 0)
+                else if (userGuessInt < secretNumber && userGuessInt > 0)
                 {
                     Console.WriteLine("Nope that wasn't it. Guess higher.");
                 }
-                else if (userGuessInt > secretNumber && i != 2 && userGuessInt < 11)
+                else if (userGuessInt > secretNumber && userGuessInt < 11)
                 {
                     Console.WriteLine("Nope that wasn't it. Guess lower.");
                 }
-                else if (userGuessInt != secretNumber && i == 2)
+                else if (userGuessInt != secretNumber)
                 {
                     Console.WriteLine("You lose! You get nothing! Good day sir!");
                 }
                 else if (userGuessInt < 1 || userGuessInt > 10)
                 {
-                    i -= 1;
                     Console.WriteLine("Your guess must be between 1 and 10. Guess again.");
                 }
             }
